@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    tools:context=".Fragment.PaymentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+              <TextView
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                android:text="@string/pay_to_the_doctor"
+                android:textColor="@color/colorBlack"/>
+
+
+
+        <!--EditText:Input Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            app:helperTextEnabled="true"
+            app:helperText="Enter Your Full Name"
+            app:helperTextTextColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--EditText:Input UPI ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/abc123_upi_id"
+            app:helperTextEnabled="true"
+            app:helperText="Enter Your Upi id"
+            app:helperTextTextColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/upi_id"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Input for Mobile-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeDoctorRegister"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/mobile_number"
+            app:helperTextEnabled="true"
+            app:helperText="Enter Your Mobile Number"
+            app:helperTextTextColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorPrimaryDark"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/receiverMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorBlack"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--EditText:Input Amount-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+            app:helperTextEnabled="true"
+            app:helperText="Enter Your Amount"
+            app:helperTextTextColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/amount_et"
+                android:inputType="numberDecimal"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!--EditText:Input Note-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/note"
+            app:helperTextEnabled="true"
+            app:helperText="Enter Future reference"
+            app:helperTextTextColor="@color/colorBlack"
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_marginTop="5dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/note"
+                android:inputType="text"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape"
+            android:textColor="#fff"
+            android:id="@+id/send"
+            android:layout_marginTop="10dp"
+            android:text="Pay Now"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#00f"
+            android:id="@+id/txtPayHistory"
+            android:text="Get Your Payment History"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:background="@drawable/btn_shape"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

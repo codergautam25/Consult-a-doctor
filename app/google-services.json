@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "400620735199",
+    "firebase_url": "https://consult-a-doctor.firebaseio.com",
+    "project_id": "consult-a-doctor",
+    "storage_bucket": "consult-a-doctor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400620735199:android:ee350a6ddfac7ecb3fb76a",
+        "android_client_info": {
+          "package_name": "com.project.consultadoctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400620735199-7aa7c2da5mco224mgvjo4u0tdf92ps4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.consultadoctor",
+            "certificate_hash": "c4c5c70b9a35d016d2fa0fd8c208b57f76165f99"
+          }
+        },
+        {
+          "client_id": "400620735199-a466hbfvha4vmds3n76iqq8ijl7m24f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM7T-9dSBMfILcyOCefTd89T9e8Sj9zes"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400620735199-a466hbfvha4vmds3n76iqq8ijl7m24f9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

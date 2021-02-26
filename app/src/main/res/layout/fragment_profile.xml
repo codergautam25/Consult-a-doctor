@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+
+    tools:context=".Fragment.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Cover Image-->
+            <ImageView
+                android:id="@+id/coverIv"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="fitXY"
+                android:background="@color/transparentItemColor">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_person_black_24dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--EditText:Display Name-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeUser"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/name"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/nameTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--EditText:Display Email-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeUser"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!--EditText:Display Phone-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeUser"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobile"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/phoneTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!--EditText:Display specialization-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeUser"
+                        android:id="@+id/tilSpecialization"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/specialization"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/specializationTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <!--EditText:Display degree-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/ThemeUser"
+                        android:id="@+id/tilDegree"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/degree"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:visibility="gone"
+                        android:focusable="true"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/degreeTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--EditText:Display Gender-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilGender"
+                        style="@style/ThemeUser"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/gender"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:visibility="gone"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/genderTv"
+                            android:textAllCaps="false"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!--EditText:Display Experience-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilExperience"
+                        style="@style/ThemeUser"
+                        app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/experience"
+                        android:textColorHint="@color/colorBlack"
+                        android:layout_marginTop="10dp"
+                        app:endIconTint="@color/colorBlack"
+                        android:enabled="true"
+                        app:boxBackgroundMode="outline"
+                        android:outlineProvider="bounds"
+                        android:focusable="true"
+                        android:visibility="gone"
+                        tools:targetApi="o">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/experienceTv"
+                            android:enabled="false"
+                            android:textSize="20sp"
+                            android:textColorHint="@color/colorBlack"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_logOut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/log_out"
+                        android:textSize="20sp"
+                        android:layout_gravity="center"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:background="@drawable/btn_shape"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--Floating action Button-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/ic_edit_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

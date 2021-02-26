@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imgHeart"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/heart_welcome"
+        />
+
+
+    <LinearLayout
+        android:layout_below="@+id/imgHeart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--EditText:Input Email-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true"
+            tools:targetApi="o">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEt"
+                android:inputType="textEmailAddress"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColorHint="@color/colorBlack"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--EditText:Input Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/ThemeLogin"
+            app:errorTextAppearance="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/colorBlack"
+            android:enabled="true"
+            app:boxBackgroundMode="outline"
+            android:outlineProvider="bounds"
+            android:focusable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passordEt"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="#000" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--Button:Login-->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginBtn"
+            android:layout_width="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_shape"
+            android:text="@string/log_in"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--TextView:Show Dialogue to recover password-->
+
+
+
+
+        <TextView
+            android:id="@+id/recoverPasswordTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:textAlignment="viewEnd"
+            android:textColor="#045C8C"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+    <!--<com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recoverPasswordTv"
+        android:visibility="gone">
+    </com.google.android.gms.common.SignInButton>-->
+
+
+
+    <!--TextView:Click to Register Activity-->
+    <TextView
+        android:id="@+id/nothave_accountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/not_have_account_register"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="#1E0845"
+        android:layout_marginBottom="2dp"/>
+
+
+
+</RelativeLayout>

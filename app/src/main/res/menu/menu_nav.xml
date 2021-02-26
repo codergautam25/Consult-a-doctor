@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:visible="false"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_portrait_black_24dp"/>
+
+    <item
+        android:id="@+id/nav_users"
+        android:title="Users"
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+    <item
+        android:id="@+id/nav_pay"
+        android:title="Pay"
+        android:icon="@drawable/ic_monetization_on_black_24dp"/>
+
+
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#8BC34A"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AC1307"
+        android:text="Your Latitude &amp; Longitude"
+        android:textColor="#F7F6F8"
+
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/etLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="@string/latitude"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:inputType="number"
+        android:textSize="18sp"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/etLng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:textColor="#000"
+        android:fontFamily="sans-serif"
+        android:hint="@string/longitude"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="18sp" />
+
+</LinearLayout>

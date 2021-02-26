@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBlack">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/senderIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_person_black_24dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="#fff"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/senderIv"
+        android:layout_toStartOf="@id/receiverIv"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtSenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sender Name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:id="@+id/txtPaidToLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paid to"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:id="@+id/txtReceiverName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receiver Name"
+            android:textSize="20sp"
+            android:textAlignment="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/receiverIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_person_black_24dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="#fff"/>
+
+
+</RelativeLayout>
